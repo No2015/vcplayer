@@ -25,8 +25,6 @@
 import { ref, watch } from 'vue'
 import { playerDataStore } from '../hooks'
 
-const props = defineProps<{
-}>()
 // 全局数据
 const playerData = playerDataStore()
 

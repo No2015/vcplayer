@@ -39,7 +39,7 @@
 import { computed } from 'vue';
 import { playerDataStore } from '../hooks'
 
-const props = defineProps<{
+defineProps<{
   hideTool?: boolean // 是否隐藏工具栏
 }>()
 

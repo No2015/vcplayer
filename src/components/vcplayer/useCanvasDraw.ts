@@ -783,13 +783,13 @@ export function useCanvasDraw() {
 
   // 监听文件路径变化
   watch(() => playerData.nginxPath, (newVal) => {
-    // console.log('>>> 图片地址:', newVal)
+    console.log('>>> 图片地址:', newVal)
     initResourceFn()
   }, { immediate: true })
 
   // 监听缺陷数据变化
   watch(() => [playerData.defectPosList], (newVal) => {
-    // console.log('>>> 缺陷数据:', newVal)
+    console.log('>>> 缺陷数据:', newVal)
     renderResource()
   })
 
